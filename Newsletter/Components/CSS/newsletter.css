@@ -1,0 +1,110 @@
+.root {
+    max-width: 630px;
+}
+
+.root h5 {
+    font-weight: 700;
+}
+
+.newsLetterText {
+    font-weight: 300;
+}
+
+.root h5,
+.newsLetterText {
+    text-align: center;
+    color: #fff;
+}
+
+.root form {
+    position: relative;
+    max-width: 430px;
+    margin: 40px auto 30px;
+}
+
+.root form label {
+    display: none;
+}
+
+.root form [class*=fieldIcons-root] {
+    height: initial;
+}
+
+.root form [class*=textInput-input] {
+    height: 54px;
+    padding: 0 50px 0 20px;
+    border: none;
+    background-color: rgba(255,255,255, 0.1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.root form [class*=textInput-input]::placeholder {
+    color: rgba(255,255,255, 0.5);
+}
+.root form [class*=textInput-input]::-webkit-input-placeholder {
+    color: rgba(255,255,255, 0.5);
+}
+.root form [class*=textInput-input]::-moz-placeholder {
+    color: rgba(255,255,255, 0.5);
+}
+.root form [class*=textInput-input]:-ms-input-placeholder {
+    color: rgba(255,255,255, 0.5);
+}
+
+.actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: var(--themeStyleColor_2);
+    border-radius: 50%;
+}
+
+.actions button {
+    overflow: hidden;
+    text-indent: -99px;
+    font-size: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.actions button svg {
+    width: 17px;
+    height: 17px;
+}
+
+@media all and (min-width: 769px) {
+    .root h5 {
+        margin: 13px 0 24px;
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .newsLetterText {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .root {
+        padding: 0 8px;
+    }
+
+    .root h5 {
+        margin: 13px 0 12px;
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    .newsLetterText {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

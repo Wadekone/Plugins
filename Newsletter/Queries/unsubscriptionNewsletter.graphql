@@ -1,0 +1,14 @@
+mutation unsubscriptionNewsletter(
+    $email:String
+    $key:String
+) {
+    UnsubscriptionNewsletter(
+        input:{
+            email:$email
+            key:$key
+        }
+    ) {
+        message
+        error
+    }
+}

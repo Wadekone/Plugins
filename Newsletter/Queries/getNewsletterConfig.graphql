@@ -1,0 +1,6 @@
+query getNewsletterConfig {
+    newsletter_config {
+        general_title
+        general_description
+    }
+}

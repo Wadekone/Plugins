@@ -1,0 +1,5 @@
+query getPwaFormKey ($key:String) {
+    pwa (key:$key) {
+        forms_use_form_key
+    }
+}

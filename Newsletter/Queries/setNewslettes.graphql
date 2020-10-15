@@ -1,0 +1,14 @@
+mutation setNewsletter(
+    $email:String
+    $key:String
+) {
+    CreateNewsletter(
+        input:{
+            email:$email
+            key:$key
+        }
+    ) {
+        message
+        error
+    }
+}

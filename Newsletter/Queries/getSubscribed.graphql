@@ -1,0 +1,12 @@
+query getNewsletter(
+    $email:String
+    $key:String
+) {
+    subscribed( input:{
+        email:$email
+        key:$key
+    }
+    ) {
+        subscribed
+    }
+}
